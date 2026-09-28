@@ -19,32 +19,36 @@ content="width=device-width, initial-scale=1.0">
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f6f3ec;
+    background: #f3f0e8;
     color: #26352d;
+    line-height: 1.6;
 }
-
 .header {
     background: #26352d;
     color: white;
-    padding: 35px 20px;
+    padding: 48px 20px 42px;
     text-align: center;
 }
 
 .header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 .header p {
-    margin-top: 8px;
-    font-size: 14px;
-    opacity: 0.8;
+    margin: 14px 0 0;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    opacity: 0.82;
 }
 
 .container {
     max-width: 700px;
     margin: auto;
-    padding: 20px;
+    padding: 28px 20px 40px;
 }
 
 .intro {
@@ -77,23 +81,28 @@ body {
 }
 
 .stop {
-    background: white;
-    padding: 17px;
-    margin-bottom: 12px;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: #ffffff;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+    border: 1px solid #eeeae4;
 }
 
 .number {
     color: #9b7a45;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
 }
 
 .stop-name {
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 4px;
+    color: #26352d;
 }
 
 .stop-detail {
@@ -107,19 +116,25 @@ body {
     display: block;
     text-align: center;
     background: #26352d;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    padding: 16px;
-    border-radius: 13px;
-    margin-top: 25px;
-    font-weight: bold;
+    padding: 17px 20px;
+    border-radius: 14px;
+    margin-top: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid #9b7a45;
 }
-
 .footer {
     text-align: center;
-    padding: 30px;
-    color: #888;
+    padding: 34px 20px;
+    color: #7d8079;
     font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+    border-top: 1px solid #e2ded5;
+    margin-top: 10px;
 }
 .stop-image {
     width: 100%;
@@ -131,9 +146,11 @@ body {
 }
 
 .stop-name-en {
-    font-size: 14px;
-    color: #777;
-    margin-top: 3px;
+    font-size: 13px;
+    color: #8a8a82;
+    margin-top: 2px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
 }
 
 .stop-detail-en {
@@ -152,10 +169,11 @@ body {
 
 <header class="header">
 
-    <h1>UTHAI HERITAGE HOTEL</h1>
+    <h1>UTHAI HERITAGE</h1>
 
     <p>
-        Uthai Thani Old Town Walking and Biking Route
+        Uthai Thani Old Town<br>
+        Walking & Biking Route
     </p>
 
 </header>
@@ -183,7 +201,13 @@ body {
 
     <!-- MAP -->
 
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1vQvwBY7maiqZzx1g2dl0Cd1Vr9KSZBk&ehbc=2E312F" width="640" height="480"></iframe>
+    <iframe
+    src="https://www.google.com/maps/d/u/0/embed?mid=1vQvwBY7maiqZzx1g2dl0Cd1Vr9KSZBk&ehbc=2E312F"
+    width="100%"
+    height="480"
+    style="border:0; border-radius:14px;"
+    loading="lazy">
+</iframe>
 
 
     <!-- ROUTE -->
