@@ -45,7 +45,20 @@ body {
     letter-spacing: 2px;
     color: #d0d0d0;
 }
+.header-eyebrow {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #bdbdbd;
+    margin-bottom: 18px;
+}
 
+.header-line {
+    width: 42px;
+    height: 1px;
+    background: #ffffff;
+    opacity: 0.5;
+    margin: 20px auto 18px;
+}
 .container {
     max-width: 700px;
     margin: auto;
@@ -88,13 +101,17 @@ body {
     border-radius: 4px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.05);
     border: 1px solid #dedede;
+    position: relative;
 }
-.number {
-    color: #171717;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 8px;
+
+.stop:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    width: 1px;
+    height: 24px;
+    background: #cfcfcf;
 }
 
 .stop-name {
@@ -269,17 +286,22 @@ body {
 <body>
 
 
-<header class="header">
+<div class="header">
+
+    <div class="header-eyebrow">
+        UTHAI THANI · SLOW TRAVEL
+    </div>
 
     <h1>UTHAI HERITAGE HOTEL</h1>
+
+    <div class="header-line"></div>
 
     <p>
         Uthai Thani Old Town<br>
         Walking & Biking Route
     </p>
 
-</header>
-
+</div>
 
 <main class="container">
 
