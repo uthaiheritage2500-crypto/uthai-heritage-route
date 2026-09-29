@@ -22,7 +22,25 @@ content="width=device-width, initial-scale=1.0">
     letter-spacing: 2.5px;
     transition: all 0.3s ease;
 }
+.route-timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px auto 50px;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
 
+.route-timeline a {
+    color: #171717;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.route-timeline span {
+    color: #c8c8c8;
+}
 .start-journey:hover {
     background: #ffffff;
     color: #111111;
@@ -362,7 +380,23 @@ body {
 
     </section>
 
+<div class="route-timeline">
 
+    <a href="#stop01">01</a>
+    <span>—</span>
+    <a href="#stop02">02</a>
+    <span>—</span>
+    <a href="#stop03">03</a>
+    <span>—</span>
+    <a href="#stop04">04</a>
+    <span>—</span>
+    <a href="#stop05">05</a>
+    <span>—</span>
+    <a href="#stop06">06</a>
+    <span>—</span>
+    <a href="#stop07">07</a>
+
+</div>
     <!-- MAP -->
 
     <iframe
@@ -381,7 +415,7 @@ body {
     </div>
 
 
-    <div class="stop">
+    <div class="stop" id="stop01">
 
         <div class="number">
             01
@@ -428,7 +462,7 @@ body {
 
     </div>
 
-<div class="stop">
+<div class="stop" id="stop02">
 
     <div class="number">
         02
